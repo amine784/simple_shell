@@ -1,4 +1,4 @@
-.TH HSH   1                 "26 November 2019"                             "2"                       "simple _shell man page "
+.TH HSH   1                 "15 November 2019"                             "2"                       "simple _shell man page "
 .SH NAME
 .B simple_shell
 simple shell second project for holberton school 2019 first cohort in tunisia
@@ -40,5 +40,3 @@ to display the path of working directory
 NO BUGS
 .SH AUTHORS 
 Amine bouchahda  && bader
-
-
