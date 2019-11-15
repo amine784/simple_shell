@@ -1,0 +1,44 @@
+.TH HSH   1                 "26 November 2019"                             "2"                       "simple _shell man page "
+.SH NAME
+.B simple_shell
+simple shell second project for holberton school 2019 first cohort in tunisia
+.SH DESCRIPTION
+The shell is a program that receives computer commands given by a user from his keyboard to send to the operating system that will execute
+them.
+In the early days of computing, the shell was the only user interface available on a Unix-like system such as Linux. Nowadays, with the
+arrival of the mouse, all computers use graphical user interfaces (GUIs) such as macOS or Windows 10, in addition to command line interfaces
+(CLI, for "command line interface "), like the shell.
+
+The word "shell" is used here as a metaphor. Shell means shell or shell in French: unlike the kernel of a computer, the shell refers to
+the highest layer of all interfaces of Unix systems (Linux, macOS)
+.SH SYNOPSYS
+.B ./hsh "how to execute project file"
+[command line] [options] [Pipe][command] [options] "pipe to configure the output of the first command to input of the second command  no 
+need to create another file to put  the result of 2 command
+.SH EXAMPLE OF OUTPUT
+$ echo "qwerty" | /bin/sh
+/bin/sh: 1: qwerty: not found
+$ echo "qwerty" | /bin/../bin/sh
+/bin/../bin/sh: 1: qwerty: not found
+$
+
+Same error with your program hsh:
+
+$ echo "qwerty" | ./hsh
+./hsh: 1: qwerty: not found
+$ echo "qwerty" | ./././hsh
+./././hsh: 1: qwerty: not found
+$
+.SH BULTINS COMMANDS 
+.SS ENV
+ print a global variables
+.SH  exit 
+command to exit shell 
+.SH PATH
+to display the path of working directory
+.SH BUGS
+NO BUGS
+.SH AUTHORS 
+Amine bouchahda  && bader
+
+
