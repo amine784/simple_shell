@@ -14,7 +14,7 @@
 extern char **environ;
 
 char **parse_line(char *buffer);
-int create_child(char **t, char **env);
+int create_child(char **t);
 void check(char *buffer, ssize_t chart);
 void put_env(void);
 char *gtenv(const char *);

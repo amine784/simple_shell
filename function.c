@@ -5,13 +5,13 @@
 *no more
 *Return: Always success
 **/
-int create_child(char **t, char **env)
+int create_child(char **t)
 {
 pid_t pid;
 pid = fork();
 if (pid == 0)
 {
-if ((-1) == execve(t[0], t, env))
+  if ((-1) == execve(t[0], t, NULL))
 {
 if (t[0] == NULL || __strcmp(t[0], "$PATH") == 0)
 {
