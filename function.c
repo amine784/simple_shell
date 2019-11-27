@@ -68,6 +68,7 @@ put_env();
 }
 if (chart == -1)
 {
+write(STDOUT_FILENO, "\n", 1);
 exit(0);
 }
 }
