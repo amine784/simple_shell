@@ -11,7 +11,7 @@ pid_t pid;
 pid = fork();
 if (pid == 0)
 {
-if ((-1) == execve(t[0], t, NULL))
+if ((-1) == execve(t[0], t, env))
 {
 if (t[0] == NULL || __strcmp(t[0], "$PATH") == 0)
 {
