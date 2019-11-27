@@ -3,11 +3,12 @@
 *main-main function from simple shelll.
 *@env:envireme,nt.
 *@av:unused attribute
+*@argc:int type
 *Return: Always success
 **/
 int main(int argc, char  __attribute__((unused))  **av, char **env)
 {
-  (void)argc;
+(void)argc;
 char *buffer = NULL;
 size_t bufsize = 1024;
 char **command;
@@ -22,7 +23,7 @@ do {
 chart = getline(&buffer, &bufsize, stdin);
 check(buffer, chart);
 command = parse_line(buffer);
- create_child(command,env);
+create_child(command, env);
 if (interctive != 0)
 write(STDOUT_FILENO, "$ ", 2);
 } while (1);
