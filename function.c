@@ -37,7 +37,7 @@ return (1);
 **/
 void put_env(void)
 {
-unsigned int  x, y;
+int x, y;
 for (x = 0; environ[x] != NULL; x++)
 {
 for (y = 0; environ[x][y] != '\0'; y++)
