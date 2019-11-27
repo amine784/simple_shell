@@ -1,7 +1,6 @@
 #include "holberton.h"
 /**
 *main-main function from simple shelll.
-*@env:envireme,nt.
 *@av:unused attribute
 *@argc:int type
 *Return: Always success
