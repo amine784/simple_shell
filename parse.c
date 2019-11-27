@@ -6,6 +6,7 @@
 **/
 char **parse_line(char *buffer)
 {
+struct stat statbuffer;
 char **t, **directory = NULL;
 size_t x = 32;
 t = malloc(x * sizeof(char));

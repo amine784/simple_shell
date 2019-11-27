@@ -12,12 +12,11 @@
 
 
 extern char **environ;
-struct stat statbuffer;
 
 char **parse_line(char *buffer);
 int create_child(char **t);
 void check(char *buffer, ssize_t chart);
-void put_env();
+void put_env(void);
 char *gtenv(const char *);
 char *__strcat(char *str1, char *str2);
 int _strlen(char *chaine);
