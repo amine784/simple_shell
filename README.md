@@ -1,4 +1,4 @@
-wwwqxwwxwxwwdxwsw12510x16. C - Simple Shell
+xwwwqxwwxwxwwdxwsw12510x16. C - Simple Shell
 Our Resources
 
 Read or watch:
