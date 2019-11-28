@@ -1,4 +1,4 @@
-10x16. C - Simple Shell
+2510x16. C - Simple Shell
 Our Resources
 
 Read or watch:
