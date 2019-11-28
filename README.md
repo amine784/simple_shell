@@ -1,5 +1,5 @@
 0x16. C - Simple Shell
-Resources
+Our Resources
 
 Read or watch:
 
