@@ -142,5 +142,5 @@ Checks
 There will be no checks released before the deadline.
 We strongly encourage the entire class to work together to create a suite
 of checks covering both regular tests and edge cases for each task.
-See task 2. Test suite.
+See task 2. Test suit
 --------------------------------------------
