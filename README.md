@@ -1,4 +1,4 @@
-w12510x16. C - Simple Shell
+sw12510x16. C - Simple Shell
 Our Resources
 
 Read or watch:
