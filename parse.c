@@ -7,10 +7,11 @@
 char **parse_line(char *buffer)
 {
 struct stat statbuffer;
+char *path, *env, *new_command, *tokens;
 char **t, **directory = NULL;
 size_t x = 32;
-t = malloc(x * sizeof(char));
 int i = 0, k = 0, j = 0, lenp = 0;
+t = malloc(x * sizeof(char));
 char *token = strtok(buffer, "\n");
 token = strtok(token, " ");
 t[0] = token;
@@ -23,7 +24,6 @@ i++;
 }
 if (t[0] == NULL)
 return (t);
-char *path, *env, *new_command, *tokens;
 path = gtenv("PATH");
 env = __strdup(path);
 lenp = _strlen(env);
