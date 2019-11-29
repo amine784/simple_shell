@@ -9,10 +9,11 @@ char **parse_line(char *buffer)
 struct stat statbuffer;
 char *path, *env, *new_command, *tokens;
 char **t, **directory = NULL;
+char *token = NULL;
 size_t x = 32;
 int i = 0, k = 0, j = 0, lenp = 0;
 t = malloc(x * sizeof(char));
-char *token = strtok(buffer, "\n");
+token = strtok(buffer, "\n");
 token = strtok(token, " ");
 t[0] = token;
 i = 1;
