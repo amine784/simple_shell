@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* gtenv-function that get envirement and path.
+* recu-function that get envirement and path.
 *@path: const char name "path".
 *Return: Always success.
 **/

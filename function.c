@@ -31,7 +31,7 @@ wait(0);
 return (1);
 }
 /**
-* put_env-function to search envirement.
+* pt_gv-function to search envirement.
 *
 *Return: Always success.
 **/
