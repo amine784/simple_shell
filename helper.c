@@ -4,16 +4,26 @@
 *@path: const char name "path".
 *Return: Always success.
 **/
-char *gtenv(const char *path)
+char *recu(const char *path)
 {
-int a = 0;
-int b = 0;
-char delim = '=';
-char delim0 = '\0';
-char *pth =NULL;
-int  gpth ;
-pth = path;
-
+int i = 0;
+int rest;
+char *token;
+char *envt;
+char *delim = "=";
+char *ret;
+while (environ[i])
+{
+envt = __strdup(environ[i]);
+token = strtok(envt, delim);
+rest = __strcmp(token, path);
+if (rest == 0)
+{
+ret = strtok(NULL, delim);
+return (ret);
+}
+i++;
+}
 return (NULL);
 }
 /**
@@ -34,14 +44,16 @@ for (y = 0; s2[y] != '\0'; y++)
 {};
 total = x + y + 1;
 chaine = malloc(sizeof(char) * (total));
-if (chaine == NULL)
-exit(1);
 for (i = 0; i < total - 1; i++)
 {
 if (i < x)
+{
 chaine[i] = s1[i];
+}
 else
+{
 chaine[i] = s2[i - x];
+}
 }
 chaine[total - 1] = '\0';
 return (chaine);
@@ -55,8 +67,6 @@ int _strlen(char *chaine)
 {
 int count;
 char delim = '\0';
-if (chaine == NULL)
-return (0);
 for (count = 0; chaine[count] != delim ; count++)
 {};
 return (count);
@@ -87,7 +97,7 @@ return (chaine);
 *@s2:string 2 char type.
 *Return: Always 0.
 **/
-int __strcmp(char *s1, char *s2)
+int __strcmp(char *s1, const char  *s2)
 {
 int l;
 int len = 0;

@@ -24,7 +24,7 @@ i++;
 }
 if (t[0] == NULL)
 return (t);
-path = gtenv("PATH");
+path = recu("PATH");
 env = __strdup(path);
 lenp = _strlen(env);
 directory = malloc(sizeof(char) * (lenp + 2));

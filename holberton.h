@@ -16,13 +16,13 @@ extern char **environ;
 char **parse_line(char *buffer);
 int create_child(char **t);
 void check(char *buffer, ssize_t chart);
-void put_env(void);
-char *gtenv(const char *);
+void pt_gv(void);
+char *recu(const char *);
 char *__strcat(char *str1, char *str2);
 int _strlen(char *chaine);
 char *__strdup(char *st);
 void sigintHandler(int sigintHandler);
-int __strcmp(char *s1, char *s2);
+int __strcmp(char *s1, const char *s2);
 
 
 

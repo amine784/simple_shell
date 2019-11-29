@@ -35,7 +35,7 @@ return (1);
 *
 *Return: Always success.
 **/
-void put_env(void)
+void pt_gv(void)
 {
 int x, y;
 for (x = 0; environ[x] != NULL; x++)
@@ -53,28 +53,28 @@ write(STDOUT_FILENO, "\n", 1);
 **/
 void check(char *buffer, ssize_t chart)
 {
+if (chart == -1)
+{
+write(STDOUT_FILENO, "\n$ ", 3);
+exit(0);
+}
 if (__strcmp(buffer, "exit\n") == 0)
 exit(0);
 if (__strcmp(buffer, "$PATH\n") == 0)
 {
 char *res;
-res = gtenv("PATH");
+res = recu("PATH");
 write(STDOUT_FILENO, res, _strlen(res));
 write(STDOUT_FILENO, "\n", 1);
 }
 if (__strcmp(buffer, "env\n") == 0)
 {
-put_env();
-}
-if (chart == -1)
-{
-write(STDOUT_FILENO, "\n", 1);
-exit(0);
+pt_gv();
 }
 }
 /**
 * sigintHandler-functino to handle ctrl+c
-*@sign :signal de handle
+*@sign :signal to  handle
 *Return :Always success
 **/
 void sigintHandler(int __attribute__((unused))  sign)

@@ -11,7 +11,7 @@ char *buffer = NULL;
 size_t bufsize = 1024;
 char **command;
 ssize_t chart;
-unsigned int interctive = 1;
+int interctive = 1;
 signal(SIGINT, sigintHandler);
 if (isatty(STDIN_FILENO))
 write(STDOUT_FILENO, "$ ", 2);
