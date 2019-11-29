@@ -10,14 +10,10 @@ int a = 0;
 int b = 0;
 char delim = '=';
 char delim0 = '\0';
-while (environ[a] != NULL)
-{
-for (; environ[a][b] != delim && environ[a][b] == path[b] && path[b]; b++)
-{};
-if (environ[a][b] == delim  && path[b] == delim0)
-return (&environ[a][++b]);
-a++;
-}
+char *pth =NULL;
+int  gpth ;
+pth = path;
+
 return (NULL);
 }
 /**
