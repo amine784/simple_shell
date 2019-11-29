@@ -5,7 +5,7 @@
 *@argc:int type
 *Return: Always success
 **/
-int main(int __attribute__((unused)) argc, char  __attribute__((unused))  **av)
+int main(int __attribute__((unused)) argc, char __attribute__((unused)) **av)
 {
 char *buffer = NULL;
 size_t bufsize = 1024;
