@@ -22,7 +22,7 @@ chart = getline(&buffer, &bufsize, stdin);
 check(buffer, chart);
 command = parse_line(buffer);
 create_child(command);
-if (interctive != 0)
+if (x != 0)
 write(STDOUT_FILENO, "$ ", 2);
 } while (1);
 if (x != 0)
